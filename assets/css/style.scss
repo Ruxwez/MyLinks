@@ -23,7 +23,8 @@ a{
 }
 
 body{
-    background: var(--bgp);
+    background: url("../img/background.webp") center center, linear-gradient(0deg, var(--bgp), var(--bgp));
+    background-size: cover;
 }
 
 :root{
