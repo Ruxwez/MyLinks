@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img{
+  max-width: 100%;
+}
+
+* {
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    color: var(--ltp);
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+    background: var(--bgp);
+}
+
+:root{
+    --bgp: #111827; 
+    --bgs: #1e2a44; 
+    --bgt: #ecf0f1; 
+  
+    --cp: #1e90ff;
+    --cpH: #0059ff;
+    --cs: rgb(251, 191, 36);
+    
+    --ltp: #ffffff;
+    --lts: #a4b0be;
+    --ltt: #1e272e;
+  
+    --zi-1: 1;
+    --zi-2: 2;
+    --zi-3: 3;
+    --zi-4: 4;
+    --zi-5: 5;
+    --zi-6: 6;
+    --zi-7: 7;
+    --zi-8: 8;
+    --zi-9: 9;
+    --zi-10: 10;
+  
+  }
+
+.Site_Main{
+    width: 100%;
+    min-height: 100vh;
+    .container{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo{
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                border-radius: 100%;
+                img{
+                    max-width: 100%;
+                }
+            }
+            h1{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        .container_buttons{
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto 0 auto;
+            max-width: 500px;
+            width: 90%;
+            a{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--cp);
+                margin-bottom: 10px;
+                border-radius: 3px;
+                color: var(--ltp);
+                font-weight: 700;
+                transition: .2s;
+                &:hover{
+                    background: var(--cpH);
+                }
+            }
+        }
+    }
+}
